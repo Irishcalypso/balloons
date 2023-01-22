@@ -1,0 +1,116 @@
+/* Exercise 1 CSS 
+Add h1  
+Class Selectors .highlight 
+*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    /*margin: 0em;*/
+}
+
+
+h1{    
+    /*margin: 0em;*/
+    margin-bottom: 0;
+    /* color: #609;  */
+    padding: .25em; 
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #4c0072;
+    background-color :#f2eef4;
+
+
+}
+
+h2{
+    /*margin: 0em;
+    color: #907f; */
+    padding: .25em; 
+    font-style: italic;
+    font-size: 1.5em;
+    /*  Moved to group selector..  font-family: Arial, Helvetica, sans-serif;*/
+    background-color : #f0e6f5;
+}
+
+h2, h3, h4 { color: #99007f;
+    }
+
+h3{
+    border-bottom: solid 1px #99007f;
+    padding-bottom: .25em;
+}
+
+    /*
+p{ This tag is no longer needed as the color was moved to the body tag, so every other tag
+    inherits that style
+    color: #555; moved to the body tag
+    font-family: Arial, Helvetica, sans-serif; ..moved to group selector, ln35...
+}   */
+
+    /*
+p, h2{
+    font-family: Arial, Helvetica, sans-serif;
+}   
+   If more than one element has the same style applied you can group the selectors.
+    The group style from the group selector below was removed to the body tag 
+    now the who page inherits Arial stack from the body.
+    */
+
+em{
+    /* over-rides the default and styles as <stong>*/
+    font-style: normal;
+    font-weight: bold;
+}
+strong{
+    /*over-rides default*/
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+.highlight { color:#ff6600;
+}
+
+.introduction{
+    font-size: 1.5em;
+    color: #72005f;
+    font-style: italic;
+}
+
+a:link {
+    color: #660099;
+    }
+
+a:visited {
+    color: #ec410c;
+    }
+
+a:hover {
+    color: #339900;
+    }
+
+.navigation {
+    /* other styles omitted... */
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    background-color: #D9EECE;
+    border: solid #4c0072;
+    border: 0px 1px 1px 1px;
+    display: flex;
+}
+
+.navigation a {
+    /* other styles omitted... */
+    text-decoration:none;
+    color: #226800;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1em;
+}
+
+.navigation a:hover {
+    background-color: #C4E8B1;
+    }
