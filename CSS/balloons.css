@@ -9,6 +9,57 @@ body{
     /*margin: 0em;*/
 }
 
+.introduction{
+    font-size: 1.5em;
+    color: #72005f;
+    font-style: italic;
+}
+
+.navigation {
+    /* other styles omitted... */
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    background-color: #D9EECE;
+    border: solid #4c0072;
+    /* border: 0px 1px 1px 1px;*/
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+    /* a:link {color: #660099;}*/
+.navigation a {
+    text-decoration:none;
+    color: #226800;
+    font-weight: bold;
+    display: block; /*a */
+    padding: 0.75em 1em;
+}
+
+/*a:visited {color:#ec410c;}*/
+.navigation a:visited {
+        background-color: #C4E8B1;
+        } 
+
+    /*a:hover {color: #339900}*/
+.navigation a:hover {
+    background-color: #7f9574;
+    } /* try hover on other elements, for example paragraphs, table rows.
+/*
+.navigation a:focus:active {
+    background-color: yellow;
+    }
+*/
+
+li.selected-link {
+    background-color: rgb(127, 119, 184);
+    text-decoration:none;
+    color:white;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1em;
+}
+
 
 h1{    
     /*margin: 0em;*/
@@ -20,10 +71,8 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     border: 1px solid #4c0072;
     background-color :#f2eef4;
-
-
 }
-
+    
 h2{
     /*margin: 0em;
     color: #907f; */
@@ -42,6 +91,10 @@ h3{
     padding-bottom: .25em;
 }
 
+.highlight { color:#ff6600;
+}
+
+
     /*
 p{ This tag is no longer needed as the color was moved to the body tag, so every other tag
     inherits that style
@@ -58,59 +111,17 @@ p, h2{
     now the who page inherits Arial stack from the body.
     */
 
+/*
 em{
-    /* over-rides the default and styles as <stong>*/
+    /* this over-rides the default and styles as <stong> --
     font-style: normal;
     font-weight: bold;
 }
+*/
+/*
 strong{
-    /*over-rides default*/
+    /* this over-rides default
     font-weight: normal;
     font-style: italic;
 }
-
-
-.highlight { color:#ff6600;
-}
-
-.introduction{
-    font-size: 1.5em;
-    color: #72005f;
-    font-style: italic;
-}
-
-a:link {
-    color: #660099;
-    }
-
-a:visited {
-    color: #ec410c;
-    }
-
-a:hover {
-    color: #339900;
-    }
-
-.navigation {
-    /* other styles omitted... */
-    list-style-type: none;
-    margin:0;
-    padding: 0;
-    background-color: #D9EECE;
-    border: solid #4c0072;
-    border: 0px 1px 1px 1px;
-    display: flex;
-}
-
-.navigation a {
-    /* other styles omitted... */
-    text-decoration:none;
-    color: #226800;
-    font-weight: bold;
-    display: block;
-    padding: 0.75em 1em;
-}
-
-.navigation a:hover {
-    background-color: #C4E8B1;
-    }
+*/
